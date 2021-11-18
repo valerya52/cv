@@ -763,5 +763,10 @@ h2{
         width: 373px;
     }
 
+    .photo__item img {
+        width: 150px;
+        height: auto;
+    }
+
 
 }
