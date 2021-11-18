@@ -1,0 +1,577 @@
+/*reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Project CSS*/
+
+body {
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+
+/*Header*/
+
+.background__header {
+    background-color: darkslateblue;
+    overflow: hidden;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header__title {
+    margin: 150px 80px;
+}
+
+.header__title h1 {
+    font-size: 70px;
+}
+
+h2{
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+.header__photo {
+    transform: translate(120%, 0px);
+    opacity: 0;
+}
+
+
+/*.header__photo*/
+
+.active{
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+
+.header__photo img{
+    width: 400px;
+    padding: 60px;
+    padding-left: 20px;
+}
+
+
+/*About me*/
+
+.title__style {
+    color: darkslateblue;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.aboutme__text {
+    color: gray;
+    line-height: 1.6;
+    font-size: 15px;
+    width: 60%;
+    font-weight: 300;
+    margin: 50px auto;
+}
+
+.background__skills {
+    background-color: #ebf4fa;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__technology {
+    color: gray;
+    margin: 30px 0;
+}
+
+.skills__block {
+    width: 40%;
+}
+
+
+/* Professional skills progress*/
+
+.progress__line-bg {
+    background-color: #e7e7e7;
+    width: 100%;
+    border-radius: 10px;
+    height: 10px;
+    border: 1px solid #b8b8b8;
+}
+
+.progress__line {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    height: 10px;
+    transition: all 5s ease 0s;
+    width: 1%;
+}
+
+
+/*extra skills*/
+
+.extraskills__title {
+    margin-left: 0px;
+    color: darkslateblue;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 25px 0;
+    display: flex;
+    justify-content: flex-start;
+    transition: 1s all 0s;
+    opacity: 1;
+}
+
+.big {
+    opacity: 0.5;
+}
+
+.extraskills__title h4{
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.extraskills__title img {
+    width: 30px;
+    padding: 0 0 5px 30px;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.extraskills__wrapper {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 0;
+    transition: 2s all 0s;
+}
+
+.extraskills__block {
+    color: gray;
+    width: 130px;
+    text-align: center;
+
+}
+
+.extraskills__block img {
+    width: 100px;
+}
+
+.extraskills__block > h5 {
+    margin: 20px auto;
+}
+
+
+
+.skills {
+    padding: 0 30px 35px 30px;
+}
+
+.background__extraskills > .container {
+    padding: 35px 0;
+}
+
+
+/*education*/
+
+.title__education {
+    margin-top: -70px;
+    margin-bottom: 30px;
+}
+
+.education__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #c6c3c3;
+    padding-bottom: 30px;
+}
+
+.education__block-years {
+    background-color: darkslateblue;
+    color: white;
+    font-size: 22px;
+    padding: 12px 20px;
+    line-height: 1.25;
+    border-radius: 5px;
+}
+
+.education__block-universe{
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 10px 50px;
+    width: 800px;
+}
+
+.education__block-universe-title {
+    font-size: 28px;
+    color: darkslateblue;
+    font-weight: 300;
+}
+
+.education__block-universe-text {
+    display: none;
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.education__block-universe-text.show {
+    display: block;
+}
+
+.education__block-showmore {
+    font-size: 35px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.education:last-child {
+    padding-bottom: 50px;
+}
+
+/*work experience*/
+.background__workexperience {
+    background-color: darkslateblue;
+    height: 400px;
+}
+.workexperience__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.workexperience__title {
+    font-size: 35px;
+    width: 35%;
+}
+
+.workexperience__line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 5px;
+}
+
+.line {
+    height: 50px;
+    width: 6px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.workexperience__text {
+    width: 60%;
+    font-weight: 300;
+    font-size: 25px;
+    position: relative;
+    top: 58px;
+}
+
+.workexperience__text-block {
+    padding-bottom: 69px;
+}
+
+
+/*photo*/
+
+.title__photo {
+    font-size: 35px;
+    color: darkslateblue;
+    padding-bottom: 50px;
+}
+
+.photo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+.photo__item img{
+    width: 95%;
+    height: 150px;
+    transition: 1s all 0s;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .1);
+}
+
+.photo__item img:hover {
+    width: 100%;
+    height: 160px;
+    position: static;
+    cursor: pointer;
+}
+
+
+/*modal*/
+
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    margin: 15% auto;
+}
+
+.modal__content img {
+    width: 600px;
+}
+
+.close__modal {
+    font-size: 25px;
+    position: relative;
+    left: 600px;
+}
+
+.close__modal p {
+    cursor: pointer;
+}
+
+/*media*/
+
+@media screen and (max-width : 1100px) {
+    .container {
+        width: 800px;
+    }
+
+    .header__photo {
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+
+        /*bottom: 50px;*/
+    }
+
+    .header__photo img {
+        width: 300px;
+    }
+
+    .header__title {
+        position: relative;
+        bottom: 50px;
+    }
+    .header__title h1 {
+        font-size: 45px;
+    }
+
+    .header__title h2 {
+        font-size: 25px;
+    }
+
+    .skills {
+        padding: 0 30px;
+    }
+
+    .extraskills__title {
+        padding-left: 30px;
+    }
+
+    .education__block-universe {
+        width: 360px;
+
+    }
+    .education__block-universe-title {
+        font-size: 25px;
+
+    }
+    .education__block {
+        justify-content: space-around;
+    }
+
+    .workexperience__title {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .container {
+        width: 600px;
+    }
+    .skills {
+        display: block;
+    }
+
+    .workexperience__title {
+        width: 20%;
+        font-size:  33px;
+    }
+
+    .workexperience__text {
+        width: 65%;
+        font-size: 20px;
+        top: 68px;
+    }
+
+    .workexperience__text-block {
+        padding-bottom: 80px;
+        width: 300px;
+    }
+
+    .header__photo img {
+        padding: 0;
+        position: relative;
+        right: 49px;
+        top: 109px;
+    }
+
+    .aboutme {
+        width: 600px;
+    }
+
+    .education__block {
+        width: 650px;
+    }
+    .education__block-universe {
+        width: 300px;
+
+    }
+
+    .photo__wrapper {
+        flex-wrap:wrap;
+        justify-content: center;
+        width: 650px;
+    }
+
+    .background__skills {
+        height: 500px;
+    }
+
+    .workexperience__text {
+        width: 51%;
+    }
+
+    .workexperience__title {
+        padding-left: 0;
+    }
+
+    .photo__wrapper {
+        width: auto;
+
+    }
+
+    .education__block {
+        width: auto;
+    }
+
+    .skills__block {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 400px) {
+    .education__block-years {
+        font-size: 15px;
+    }
+
+    .education__block-universe {
+        width: 219px
+    ;
+    }
+
+    .education__block-universe-title {
+        font-size: 16px;
+    }
+
+    .education__block-universe-text {
+        font-size: 12px;
+    }
+
+    .background__workexperience {
+        width: 150%;
+    }
+
+    .workexperience__title {
+        width: 16%;
+        font-size: 27px;
+        padding-left: 10px;
+    }
+
+    .workexperience__text-block {
+        padding-bottom: 65px;
+        width: 281px;
+    }
+
+    .background__header {
+        width: 150%;
+        height: 580px;
+    }
+
+    .background__skills {
+        width: 150%;
+    }
+}
