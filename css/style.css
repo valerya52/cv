@@ -765,8 +765,9 @@ h2{
 
     .photo__item img {
         width: 150px;
-        height: auto;
+        height: 130px;
     }
-
-
+    .photo__wrapper {
+        display: block;
+    }
 }
