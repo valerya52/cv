@@ -237,7 +237,7 @@ h2{
     align-items: center;
     justify-content: space-between;
     color: #c6c3c3;
-    padding-bottom: 30px;
+    padding: 0 10px 30px 10px;
 }
 
 .education__block-years {
@@ -277,6 +277,7 @@ h2{
     font-size: 35px;
     font-weight: 300;
     cursor: pointer;
+    padding-right: 20px;
 }
 
 .education:last-child {
@@ -298,6 +299,7 @@ h2{
 .workexperience__title {
     font-size: 35px;
     width: 35%;
+    padding-right: 20px;
 }
 
 .workexperience__line {
@@ -402,176 +404,364 @@ h2{
 
 /*media*/
 
-@media screen and (max-width : 1100px) {
-    .container {
-        width: 800px;
-    }
-
-    .header__photo {
-        padding: 0;
-        margin: 0;
-        position: relative;
-
-
-        /*bottom: 50px;*/
-    }
-
-    .header__photo img {
-        width: 300px;
-    }
-
-    .header__title {
-        position: relative;
-        bottom: 50px;
-    }
-    .header__title h1 {
-        font-size: 45px;
-    }
-
-    .header__title h2 {
-        font-size: 25px;
-    }
-
-    .skills {
-        padding: 0 30px;
-    }
-
-    .extraskills__title {
-        padding-left: 30px;
-    }
-
+@media (max-width : 1147px) {
     .education__block-universe {
-        width: 360px;
+        padding: 10px 14px;
 
     }
-    .education__block-universe-title {
-        font-size: 25px;
-
-    }
-    .education__block {
-        justify-content: space-around;
-    }
-
-    .workexperience__title {
-        padding-left: 30px;
-    }
-}
-
-@media screen and (max-width : 800px){
-    .container {
-        width: 600px;
-    }
-    .skills {
-        display: block;
-    }
-
-    .workexperience__title {
-        width: 20%;
-        font-size:  33px;
-    }
-
-    .workexperience__text {
-        width: 65%;
-        font-size: 20px;
-        top: 68px;
-    }
-
-    .workexperience__text-block {
-        padding-bottom: 80px;
-        width: 300px;
-    }
-
-    .header__photo img {
-        padding: 0;
-        position: relative;
-        right: 49px;
-        top: 109px;
-    }
-
-    .aboutme {
-        width: 600px;
-    }
-
-    .education__block {
-        width: 650px;
-    }
-    .education__block-universe {
-        width: 300px;
-
-    }
-
-    .photo__wrapper {
-        flex-wrap:wrap;
-        justify-content: center;
-        width: 650px;
-    }
-
-    .background__skills {
-        height: 500px;
-    }
-
-    .workexperience__text {
-        width: 51%;
-    }
-
-    .workexperience__title {
-        padding-left: 0;
-    }
-
-    .photo__wrapper {
-        width: auto;
-
-    }
-
-    .education__block {
-        width: auto;
-    }
-
-    .skills__block {
-        width: 100%;
+    .background__header {
+        height: 630px;
     }
 
 }
 
-@media screen and (max-width : 400px) {
+@media (max-width : 1062px){
+    .education__block-universe {
+        width: 715px;
+
+    }
+    .workexperience__title {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width : 994px){
+    .education__block-universe {
+        width: 680px;
+        font-size: 24px;
+    }
     .education__block-years {
-        font-size: 15px;
-    }
-
-    .education__block-universe {
-        width: 219px
-    ;
-    }
-
-    .education__block-universe-title {
-        font-size: 16px;
-    }
-
-    .education__block-universe-text {
-        font-size: 12px;
-    }
-
-    .background__workexperience {
-        width: 150%;
+        font-size: 20px;
     }
 
     .workexperience__title {
-        width: 16%;
-        font-size: 27px;
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
+    .photo__item img {
+        height: 120px;
+    }
+
+    .education__block-showmore {
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width : 927px) {
+    .education__block-universe-title {
+        font-size: 23px;
+    }
+    .education__block-universe {
+        width: 60%;
+    }
     .workexperience__text-block {
-        padding-bottom: 65px;
-        width: 281px;
+        padding-bottom: 76px;
+    }
+    .workexperience__line {
+        padding-right: 20px;
+    }
+
+    .education__block-showmore {
+        padding-right: 41px;
+    }
+}
+
+@media (max-width : 825px) {
+    .header h2 {
+        width: 261px;
+    }
+
+    .header__photo img {
+        width: 348px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width : 811px){
+    .photo__wrapper {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+@media (max-width : 787px) {
+    .header__photo img {
+        position: relative;
+        right: 42px;
+        width: 324px;
+    }
+
+    .header__title h1 {
+        font-size: 57px;
+    }
+
+    .header__title h1 {
+        position: relative;
+        bottom: 30px;
+    }
+    .background__header {
+        height: 587px;
+    }
+
+}
+
+@media (max-width : 719px) {
+    .header__photo img {
+        width: 284px;
+    }
+
+    .header__title h1 {
+        font-size: 48px;
+    }
+
+    .header h2 {
+        font-size: 33px;
+        padding-top: 14px;
     }
 
     .background__header {
-        width: 150%;
-        height: 580px;
+        height: 552px;
+    }
+}
+
+@media (max-width : 659px) {
+    .header__photo img {
+        width: 279px;
     }
 
-    .background__skills {
-        width: 150%;
+    .header__photo img {
+        right: 79px;
     }
+
+    .header h2 {
+        font-size: 28px;
+    }
+
+    .education__block-showmore {
+        padding-right: 0;
+    }
+
+    .education__block {
+        padding: 0 25px 30px 10px;
+    }
+
+    .workexperience__text-block {
+        padding-bottom: 62px;
+    }
+
+    .header__title h1 {
+        left: -31px;
+    }
+
+    .header h2 {
+        position: relative;
+        left: -31px;
+    }
+}
+
+@media (max-width : 659px) {
+    .header__photo img {
+        right: 98px;
+    }
+}
+
+@media (max-width : 659px) {
+    .header__photo img {
+        right: 123px;
+    }
+}
+
+@media (max-width : 597px) {
+    .header__photo img {
+        right: 153px;
+        width: 256px;
+    }
+}
+
+@media (max-width : 561px) {
+    .title__style {
+        padding-top: 40px;
+    }
+
+    .aboutme__text {
+        margin: 31px auto
+    }
+
+    .education__block-universe-title {
+        font-size: 17px;
+    }
+
+    .education__block-years {
+        font-size: 17px;
+    }
+
+    .workexperience__title {
+        font-size: 28px;
+        width: 26%;
+        padding-right: 12px;
+    }
+
+    .line {
+        height: 43px;
+        width: 2px;
+    }
+
+    .workexperience__text-block {
+        font-size: 20px;
+    }
+
+    .title__photo {
+        font-size: 29px;
+        padding-bottom: 44px;
+    }
+    .title__style {
+        padding-top: 50px;
+    }
+    .close__modal img {
+        width: 400px;
+    }
+}
+
+@media (max-width : 535px) {
+    .header__title h1 {
+        left: -54px;
+    }
+
+    .header h2 {
+        left: -54px;
+    }
+
+    .header__photo img {
+        right: 162px;
+        width: 237px;
+    }
+    .background__header {
+        height: 430px;
+    }
+    .aboutme__text {
+        width: 80%;
+    }
+}
+
+@media (max-width : 493px) {
+    .header__title {
+        margin: 99px 80px;
+    }
+
+    .header__title {
+        font-size: 40px;
+    }
+
+    .header h2 {
+        font-size: 24px;
+    }
+
+    .header__photo img {
+        right: 211px;
+        width: 221px;
+    }
+
+    .background__header {
+        height: 383px;
+    }
+
+    .extraskills__block img {
+        width: 75px;
+    }
+
+    .extraskills__title h4 {
+        font-size: 25px;
+    }
+
+    .education__block-years {
+        font-size: 13px;
+    }
+
+    .education__block-universe-title {
+        font-size: 15px;
+    }
+
+    .workexperience__title {
+        font-size: 23px;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .workexperience__text-block {
+        font-size: 17px;
+        padding-bottom: 65px;
+    }
+
+    .education__block-universe-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width : 441px) {
+    .header__title h1 {
+        font-size: 39px;
+    }
+    .header h2 {
+        font-size: 16px;
+    }
+    .header__photo img {
+        width: 194px;
+    }
+    .background__header {
+        height: 361px;
+    }
+    h2 {
+        font-size: 28px;
+        padding-top: 25px;
+    }
+    .photo__wrapper {
+        padding-bottom: 79px;
+    }
+    .education__block {
+        padding: 0px 10px 30px 10px;
+    }
+
+}
+
+@media (max-width : 441px) {
+    .header__title h1 {
+        font-size: 34px;
+    }
+    .header h2 {
+        font-size: 15px;
+    }
+
+    .header h2 {
+        padding-top: 5px;
+    }
+    .header__photo img {
+        width: 173px;
+    }
+
+}
+
+@media (max-width : 375px) {
+    .header__photo img {
+        width: 198px;
+        position: relative;
+        bottom: 50px;
+        bottom: -92px;
+        right: 261px;
+    }
+    .extraskills__block img {
+        width: 65px;
+    }
+    .education__block-years {
+        font-size: 12px;
+        padding: 7px 5px;
+    }
+    .modal__content img {
+        width: 373px;
+    }
+
+
 }
